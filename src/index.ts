@@ -23,7 +23,7 @@ export default class TypeDefsTransform implements Transform {
             });
 
             if (additionalTypeDefs) {
-                newSchema = extendSchema(originalWrappingSchema, additionalTypeDefs[0].document);
+                newSchema = extendSchema(newSchema, additionalTypeDefs[0].document);
             }
         }
 
